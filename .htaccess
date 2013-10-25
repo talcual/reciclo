@@ -1,0 +1,12 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^xhtml/(.*)$ xhtml/$1 [L]
+RewriteRule ^uploads/(.*)$ uploads/$1 [L]
+RewriteRule ^face/(.*)$ face/$1 [L]
+RewriteRule ^ico/(.*)$ ico/$1 [L]
+RewriteRule ^models/(.*)$ models/$1 [L]
+RewriteRule ^hooks/(.*)$ hooks/$1 [L]
+RewriteRule ^css/(.*)$ css/$1 [L]
+RewriteRule ^otros/(.*)$ otros/$1 [L]
+RewriteCond $1 !^(index\.php|images|robots\.txt)
+RewriteRule ^(.*)$ reciclo/index.php?r=$1 [L]
