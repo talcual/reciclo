@@ -8,7 +8,7 @@ class usersModel extends Model{
  
  public function validaUsario($data){
 
-    $sql = "SELECT * FROM usuarios_generales WHERE email ='".$data['user']."' and pass = md5('".$data['pass']."') LIMIT 1";
+    $sql = "SELECT * FROM usuarios_generales WHERE email ='".limpiar($data['user'])."' and pass = md5('".$data['pass']."') LIMIT 1";
     $validate = Model::query($sql);
 	
 	if(count($validate) > 0){
