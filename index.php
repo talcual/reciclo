@@ -28,7 +28,7 @@ autoLoad($libraries);
 
 // Config Zone
 $config = array('errors' => true,'uri'=>'http://www.negociolocal.net/');
-$app['app']::SQLConnect(array('host'=>'localhost','user'=>'caribeco_reci','pass'=>'@5]zEyu]uCFg','db'=>'caribeco_reciclo'));
+$app['app']::SQLConnect(array('host'=>'localhost','user'=>'','pass'=>'','db'=>''));
 $app['app']::settings($config);
 
 
